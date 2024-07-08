@@ -1,0 +1,252 @@
+:root{
+    /* --color-accent: #FFD700 ; */
+    --color-accent: #fff176;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #020202;
+  
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a, p{
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: "Basis Grotesque Regular";
+    font-size: 1.5rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.celebration-container {
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    background-color: var(--color-accent);
+    padding: 5px;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 20px rgba(230, 170, 40, 0.5);
+    width: 7rem;
+    height: 7rem;
+    text-align: left;
+    justify-content: left;
+}
+
+.celebration-container h3 {
+    font-family: "PP Monument Extended", sans-serif;
+    color: #020202;
+    font-size: 0.5rem;
+   
+}
+
+.celebration-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav > div{
+    flex: 1;
+}
+.links-1, .links-2{
+    display: flex;
+    gap: 2em;
+}
+.links-2{
+justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo a{
+    font-family: "PP Monument Extended";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: -0.02em;
+}
+
+.container{
+    width: 100%;
+    height: 2000vh;
+}
+
+
+.active-slide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.active-slide img{
+    position: absolute;
+    filter: blur(50px);
+    transform: scale(1.125);
+
+}
+
+.slider{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 47rem;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 25rem;
+    height: 31.25rem;
+    overflow: hidden;
+}
+.slide-copy{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "PP Monument Extended";
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: 150%;
+    color: var(--color-accent);
+  }
+
+.slide-copy p#index{
+    font-family: "Basis Grotesque Regular";
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.75em;
+}
+
+#slide-1{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-22500px);
+    opacity: 0;
+}
+
+#slide-2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-20000px);
+    opacity: 0;
+}
+#slide-3{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-17500px);
+    opacity: 0;
+}
+
+#slide-4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-15000px);
+    opacity: 0;
+}
+#slide-5{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-12500px);
+    opacity: 0;
+}
+
+#slide-6{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-10000px);
+    opacity: 0;
+}
+#slide-7{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+    opacity: 0;
+}
+
+#slide-8{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+    opacity: 0;
+}
+#slide-9{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+    opacity: 0.5;
+}
+
+#slide-10{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
+    opacity: 1;
+}
+
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
