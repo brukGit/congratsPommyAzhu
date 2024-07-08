@@ -31,75 +31,37 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5em 2em;
+    padding: 1.5em 1em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 1em;;
+
 }
 
-.celebration-container {
-    position: fixed;
-    top: 10%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    text-align: center;
-    background-color: var(--color-accent);
-    padding: 5px;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 20px rgba(230, 170, 40, 0.5);
-    width: 7rem;
-    height: 7rem;
-    text-align: left;
-    justify-content: left;
+
+h3{
+   
+    font-size: 2rem;
+    color: white;
 }
 
-.celebration-container h3 {
-    font-family: "PP Monument Extended", sans-serif;
-    color: #020202;
-    font-size: 0.5rem;
+nav>div{
+    padding: 0.2rem;
+    border-radius: 1rem;
+}
+
+.left{
+    background-color: purple;
+    
+}
+
+.right{
+    background-color: blue;
    
 }
 
-.celebration-gif {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1.5em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-nav > div{
-    flex: 1;
-}
-.links-1, .links-2{
-    display: flex;
-    gap: 2em;
-}
-.links-2{
-justify-content: flex-end;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-.logo a{
-    font-family: "PP Monument Extended";
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: -0.02em;
-}
 
 .container{
     width: 100%;
@@ -129,7 +91,9 @@ justify-content: flex-end;
 .slider{
     position: fixed;
     top: 0;
-    width: 100vw;
+    left: 2.5vw;
+    width: 95vw;
+    margin: auto;
     height: 100vh;
     transform-style: preserve-3d;
     perspective: 47rem;
