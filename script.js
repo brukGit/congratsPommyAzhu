@@ -67,3 +67,57 @@ window.addEventListener("load", function(){
 )
 
 });
+
+
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get references to the elements
+    const leftDiv = document.querySelector('.left');
+    const rightDiv = document.querySelector('.right');
+    const leftImg = leftDiv.querySelector('img');
+    const rightImg = rightDiv.querySelector('img');
+    const nav = document.querySelector('nav');
+
+    // Initially hide both images
+    leftImg.style.display = 'none';
+    rightImg.style.display = 'none';
+
+    let hideTimer;
+
+    // Function to hide both images
+    function hideAllImages() {
+        leftImg.style.display = 'none';
+        rightImg.style.display = 'none';
+    }
+
+    // Function to toggle image visibility
+    function toggleImage(showImg, hideImg) {
+        showImg.style.display = 'block';
+        hideImg.style.display = 'none';
+        
+        // Clear any existing timer
+        clearTimeout(hideTimer);
+        
+        // Set a new timer to hide images after 3 seconds
+        hideTimer = setTimeout(hideAllImages, 3000);
+    }
+
+    // Add click event listeners to the divs
+    leftDiv.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleImage(leftImg, rightImg);
+    });
+
+    rightDiv.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleImage(rightImg, leftImg);
+    });
+
+    // Add click event listener to the document to hide images when clicking elsewhere
+    document.addEventListener('click', hideAllImages);
+
+    // Prevent clicks within the nav from triggering the document click
+    nav.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+});
