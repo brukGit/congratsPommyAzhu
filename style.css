@@ -29,6 +29,7 @@ a, p{
 
 nav{
     position: fixed;
+    
     top: 0;
     width: 100%;
     padding: 1.5em 1em;
@@ -52,7 +53,7 @@ nav>div{
     border-radius: 1rem;
     z-index: 1000;
 }
-.left:hover, .right:hover{
+.left:hover, .right:hover, #musicToggle:hover{
     cursor: pointer;
 }
 nav>div img{
@@ -68,6 +69,31 @@ nav>div img{
 .right{
     background-color: blue;
    
+}
+#backgroundMusic{
+    background-color: transparent;
+    /* color: var(--color-accent); */
+    color: #f9f2b5;
+
+    /* --color-accent: #f9f2b5; */
+    
+}
+#musicToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+#musicToggle svg {
+    width: 30px;
+    height: 30px;
+    fill: #f9f2b5;
+}
+.hidden {
+    display: none;
+}
+p{
+    font-size: 1.5rem;
 }
 
 
@@ -216,6 +242,8 @@ nav>div img{
     height: 100%;
     z-index: -1;
 }
+
+
 
 
 
